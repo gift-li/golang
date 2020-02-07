@@ -1,16 +1,9 @@
 package main
 
-// Acc funtion :account struct set
-type Acc struct {
-	name  string
-	pass  int
-	money int
-}
+import "fmt"
 
 func main() {
-	A := [3]Acc{}
-	// account-verifying process
-	if Pscheck(A) {
-		System(&A)
+	if System() == 0 {
+		fmt.Println("謝謝光臨，歡迎下次再來!")
 	}
 }

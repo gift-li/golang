@@ -4,22 +4,33 @@ import (
 	"fmt"
 )
 
-// System : main prog
-func System(A *Acc) {
+// Acc : 資料規格設定
+type Acc struct {
+	name  string
+	pass  int
+	money int
+}
+
+// System : 主操作程式
+func System() int {
+	var a int
 	for {
-		var inp int
-		fmt.Println("輸入指令以進行動作\n1:改密碼\n2:改名稱\n3:提領錢")
-		fmt.Scanln(&inp)
-		switch inp {
+		var input int
+		fmt.Println("輸入指令以進行動作\n1:創建帳號\n2:改密碼\n3:改名稱\n4:提領錢\n5:離開")
+		fmt.Scanln(&input)
+		switch input {
 		case 1:
-			Pschange(A)
+			Build(A)
 		case 2:
-			Nachange(A)
+			Pschange(A)
 		case 3:
+			Nachange(A)
+		case 4:
 			Money(A)
+		case 5:
+			break
 		default:
-			goto finish
+			fmt.Println("無效指令")
 		}
 	}
-finish:
 }
