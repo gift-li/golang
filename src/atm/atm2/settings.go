@@ -1,4 +1,4 @@
-package main
+package atm2
 
 // Adjust : 定義更改模式接口
 type Adjust interface {

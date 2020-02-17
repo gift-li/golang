@@ -1,4 +1,4 @@
-package main
+package atm1
 
 // Acc funtion :account struct set
 type Acc struct {

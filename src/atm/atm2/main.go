@@ -1,4 +1,4 @@
-package main
+package atm2
 
 var acc = Account{}
 
