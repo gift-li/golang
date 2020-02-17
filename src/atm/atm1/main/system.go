@@ -1,4 +1,4 @@
-package atm1
+package main
 
 import (
 	"fmt"

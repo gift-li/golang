@@ -1,4 +1,4 @@
-package atm3v1
+package main
 
 // Peracc : 登入中的帳號索引值
 var Peracc int

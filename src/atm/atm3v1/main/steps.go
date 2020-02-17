@@ -1,4 +1,4 @@
-package atm3v1
+package main
 
 import "fmt"
 
